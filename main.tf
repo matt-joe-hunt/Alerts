@@ -14,4 +14,6 @@ resource "aws_cloudwatch_metric_alarm" "metric_alarm" {
   statistic                 = each.value.statistic
   threshold                 = each.value.threshold
   alarm_description         = each.value.alarm_description
+
+  dimensions = var.dimensions
 }

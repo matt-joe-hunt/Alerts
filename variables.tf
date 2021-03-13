@@ -6,3 +6,7 @@ variable "region-master" {
 variable "alarm_list" {
   description = "(optional) describe your variable"
 }
+
+variable "dimensions" {
+  description = "(optional) describe your variable"
+}
